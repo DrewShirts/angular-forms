@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm, NgModel} from '@angular/forms';
-import {DataService} from '../data/data.service';
-import {UserSettings} from '../data/user-settings';
+import { NgForm, NgModel } from '@angular/forms';
+import { DataService } from '../data/data.service';
+import { UserSettings } from '../data/user-settings';
 
 @Component({
   selector: 'app-user-settings-form',
