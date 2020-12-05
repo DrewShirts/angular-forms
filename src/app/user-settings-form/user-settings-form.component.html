@@ -58,6 +58,11 @@
       <textarea id="notes" name="notes" class="form-control" rows="3" [(ngModel)]="userSettings.notes"></textarea>
     </div>
 
+    <div [hidden]="!postError"
+      class="alert alert-danger">
+      {{ postErrorMessage }}
+    </div>
+
     <button class="btn btn-primary">Ok</button>
   </form>
 </div>
