@@ -13,7 +13,8 @@ import { UserSettingsFormComponent } from './user-settings-form/user-settings-fo
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
