@@ -20,7 +20,8 @@ export class UserSettingsFormComponent implements OnInit {
   };
 
   singleModel = "On";
-
+  startDate: Date;
+  startDateRange: Date;
   userSettings : UserSettings = { ...this.originalUserSettings };
   postError: boolean = false;
   postErrorMessage: any = '';
@@ -29,6 +30,9 @@ export class UserSettingsFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.subscriptionTypes = this.dataService.getSubscriptionTypes();
+
+    this.startDate = new Date();
+    this.startDateRange = new Date();
   }
 
 

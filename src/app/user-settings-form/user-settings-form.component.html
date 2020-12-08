@@ -20,6 +20,28 @@
       {{ singleModel }}
     </button>
 
+    <div class="form-group">
+      <label for="startDate">Start Date</label>
+      <input type="text"
+           placeholder="Start Date"
+           class="form-control"
+           [(ngModel)]="startDate" name="startDate" id="startDate"
+           bsDatepicker>
+    </div>
+
+    Start Date: {{ startDate }}
+
+    <div class="form-group">
+      <label for="startDateRange">Start Date Range</label>
+      <input type="text"
+           placeholder="Start Date Range"
+           class="form-control"
+           [(ngModel)]="startDateRange" name="startDateRange" id="startDateRange"
+           bsDaterangepicker>
+    </div>
+
+    Start Date Range: {{ startDateRange }}
+
     <div class="form-check form-group">
       <input class="form-check-input" type="checkbox"  id="emailOffers" name="emailOffers" [(ngModel)]="userSettings.emailOffers">
       <label class="form-check-label" for="emailOffers">
