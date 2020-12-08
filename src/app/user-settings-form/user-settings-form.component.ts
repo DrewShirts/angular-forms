@@ -18,6 +18,9 @@ export class UserSettingsFormComponent implements OnInit {
     subscriptionType: null,
     notes: null
   };
+
+  singleModel = "On";
+
   userSettings : UserSettings = { ...this.originalUserSettings };
   postError: boolean = false;
   postErrorMessage: any = '';
