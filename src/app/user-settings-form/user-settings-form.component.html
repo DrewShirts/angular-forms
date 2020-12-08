@@ -56,6 +56,15 @@
 
     Start Time: {{ startTime }}
 
+    <div class="form-group">
+      User Rating
+      <rating [(ngModel)]="userRating" [max]="maxRating"
+        name="userRating" id="userRating"
+        [titles]="['one','two','three']"></rating>
+    </div>
+
+    User Rating: {{ userRating }}
+
     <p>User Interface Style</p>
     <div class="form-group">
       <div class="btn-group">
