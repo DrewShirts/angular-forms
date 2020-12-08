@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { UserSettingsFormComponent } from './user-settings-form/user-settings-form.component';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     HttpClientModule,
     ButtonsModule.forRoot(),
     BsDatepickerModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TimepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

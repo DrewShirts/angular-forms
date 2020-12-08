@@ -22,6 +22,7 @@ export class UserSettingsFormComponent implements OnInit {
   singleModel = "On";
   startDate: Date;
   startDateRange: Date;
+  startTime: Date;
   userSettings : UserSettings = { ...this.originalUserSettings };
   postError: boolean = false;
   postErrorMessage: any = '';
@@ -33,6 +34,7 @@ export class UserSettingsFormComponent implements OnInit {
 
     this.startDate = new Date();
     this.startDateRange = new Date();
+    this.startTime = new Date();
   }
 
 
